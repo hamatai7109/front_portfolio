@@ -1,0 +1,102 @@
+/* 共通スタイルは外に書く */
+.p-hero{
+  position: relative;
+}
+
+.p-hero__titleBox{
+  width: 80%;
+  padding: 60px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p-hero__titleBox--text{
+  font-size: 4.0rem;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+.myName{
+  color: #729edf;
+}
+
+.p-hero__linkBox{
+  margin: 0 auto;
+  width: 40%;
+  padding: 20px 40px;
+  border: 1px solid;
+  transition: all 0.3s linear;
+}
+
+.p-hero__linkBox:hover{
+  background-color: #729edf;
+  border: none;
+}
+
+.p-hero__linkBox:hover
+.p-hero__linkBox--link{
+  color: #ffffff;
+}
+
+.p-hero__linkBox:hover
+.arrow::after{
+  background-color: #ffffff;
+  transform: rotate(90deg);
+}
+
+.p-hero__linkBox:hover
+.arrow::before{
+  border-color: #ffffff;
+  top: -10px;
+  right: -57px;
+  transform: rotate(135deg);
+}
+
+.p-hero__linkBox--link{
+  font-size: 1.5rem;
+}
+
+.arrow{
+  position: relative;
+  display: inline-block;
+}
+
+.arrow::before{
+  content: "";
+  position: absolute;
+  top:-15px;
+  right: -60px;
+  width: 14px;
+  height: 14px;
+  border-top: 4px solid #333333;
+  border-right: 4px solid #333333;
+  transform: rotate(45deg);
+  transition: all 0.3s linear;
+}
+
+.arrow::after{
+  content: "";
+  position: absolute;
+  top:-10px;
+  bottom: 0;
+  right: -60px;
+  width: 20px;
+  height: 4px;
+  background-color: #333333;
+  transition: all 0.3s linear;
+}
+
+
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}

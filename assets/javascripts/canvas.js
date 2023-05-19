@@ -8,7 +8,7 @@ var c = canvas.getContext('2d'); //c stands for content
 
 //変数
 var mouse = {x:undefined, y:undefined};
-var maxRadius = 80;
+var maxRadius = 50;
 
 //色の配列
 var colorArray = [
@@ -18,7 +18,6 @@ var colorArray = [
   '#A6B4E6',
   '#D9A7EB'
 ];
-
 
 //画面幅を変える度に、その都度、画面幅を取得し、◯をつくりなおす。
 window.addEventListener('resize', function(){

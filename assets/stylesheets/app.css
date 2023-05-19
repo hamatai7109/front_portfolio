@@ -19,6 +19,7 @@
 /*// -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------*/
+@import 'object/components/sectionTitle.css';
 
 
 /*// -----------------------------------------------------------------
@@ -26,6 +27,14 @@
 // -----------------------------------------------------------------*/
 
 @import 'object/projects/index.css';
+@import 'object/projects/hero.css';
+@import 'object/projects/header.css';
+@import 'object/projects/menu.css';
+@import 'object/projects/about.css';
+@import 'object/projects/feature.css';
+@import 'object/projects/intro.css';
+@import 'object/projects/skill.css';
+@import 'object/projects/strength.css';
 
 /*// -----------------------------------------------------------------
 // Utility

@@ -1,0 +1,32 @@
+/* 共通スタイルは外に書く */
+.c-sectionTitle{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.c-sectionTitle__text{
+  padding-bottom: 10px;
+  font-size: 3.0rem;
+  position: relative;
+}
+
+.c-sectionTitle__text::after{
+  content: "";
+  width: 10%;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}

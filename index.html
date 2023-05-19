@@ -10,21 +10,143 @@
   <meta name="description" content="濵野大志のポートフォリオです">
   <link rel="icon" href="assets/images/common/favicon.ico">
   <link rel="stylesheet" href="assets/stylesheets/app.css">
+  <script src="https://kit.fontawesome.com/13d82e61e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="p-hero">
+  <section class="p-hero">
     <canvas></canvas>
     <div class="p-hero__bg"></div>
     <div class="p-hero__titleBox">
-      <h1 class="p-hero__titleBox--text">Hello,<br> I am Taishi Hamano</h1>
+      <h1 class="p-hero__titleBox--text">Hello,World<br> I am <span class="myName">Taishi Hamano<span></h1>
       <div class="p-hero__linkBox">
-        <a class="p-hero__linkBox--link" href="#">View My Work<span class="arrow"></span></a>
+        <a class="p-hero__linkBox--link" href="#work">View My Work<span class="arrow"></span></a>
       </div>
     </div>
-  </div>
-  <header></header>
-  <main></main>
+  </section>
+  <header class="p-header">
+    <div class="p-header__wrapper">
+      <div class="p-menu">
+        <ul class="p-menuBox">
+          <li class="p-menuBox__list"><a href="#" class="p-menuBox__list--link">HOME</a></li>
+          <li class="p-menuBox__list"><a href="#" class="p-menuBox__list--link">ABOUT</a></li>
+          <li class="p-menuBox__list"><a href="#" class="p-menuBox__list--link">WORK</a></li>
+          <li class="p-menuBox__list"><a href="#" class="p-menuBox__list--link">BLOG</a></li>
+          <li class="p-menuBox__list"><a href="#" class="p-menuBox__list--link">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="p-about" id="about">
+      <div class="p-about__wrapper">
+        <div class="c-sectionTitle">
+          <h2 class="c-sectionTitle__text">ABOUT</h2>
+        </div>
+        <div class="p-strength">
+          <div class="p-strength__content">
+            <div class="p-strength__content--icon"><i class="fa-solid fa-gauge"></i></div>
+            <h3 class="p-strength__content--title">FAST</h3>
+            <p class="p-strength__content--text">Fast load times and lag free interaction, my highest priority.</p>
+          </div>
+          <div class="p-strength__content">
+            <div class="p-strength__content--icon"><i class="fa-solid fa-handshake"></i></i></div>
+            <h3 class="p-strength__content--title">Responsive</h3>
+            <p class="p-strength__content--text">My layouts will work on any device, big or small.
+            </p>
+          </div>
+          <div class="p-strength__content">
+            <div class="p-strength__content--icon"><i class="fa-regular fa-lightbulb"></i></div>
+            <h3 class="p-strength__content--title">Intuitive</h3>
+            <p class="p-strength__content--text">Strong preference for easy to use, intuitive UX/UI.
+            </p>
+          </div>
+          <div class="p-strength__content">
+            <div class="p-strength__content--icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <h3 class="p-strength__content--title">Dynamic</h3>
+            <p class="p-strength__content--text">Websites don't have to be static, I love making pages come to life.
+            </p>
+          </div>
+        </div>
+        <div class="p-feature">
+          <div class="p-intro">
+            <img src="assets/images/common/profile.jpg" alt="プロフィール写真" class="p-intro__img">
+            <h3 class="p-intro__title">Who's this guy?</h3>
+            <p class="p-intro__text">I'm a Front-End Developer for ChowNow in Los Angeles, CA.
+              I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
+              Let's make something special.</p>
+          </div>
+          <div class="p-skill">
+            <div class="p-skill__bar">
+              <div class="p-skill__title">HTML</div>
+              <p class="p-skill__percentage">90%</p>
+              <div class="p-skill__fill html"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">CSS</div>
+              <p class="p-skill__percentage">90%</p>
+              <div class="p-skill__fill css"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">Javascript</div>
+              <p class="p-skill__percentage">70%</p>
+              <div class="p-skill__fill javascript"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">PHP</div>
+              <p class="p-skill__percentage">70%</p>
+              <div class="p-skill__fill php"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">Java</div>
+              <p class="p-skill__percentage">50%</p>
+              <div class="p-skill__fill java"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">Laravel</div>
+              <p class="p-skill__percentage">50%</p>
+              <div class="p-skill__fill laravel"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">React</div>
+              <p class="p-skill__percentage">50%</p>
+              <div class="p-skill__fill react"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">Node.js</div>
+              <p class="p-skill__percentage">50%</p>
+              <div class="p-skill__fill node"></div>
+            </div>
+            <div class="p-skill__bar">
+              <div class="p-skill__title">Figma</div>
+              <p class="p-skill__percentage">60%</p>
+              <div class="p-skill__fill figma"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-work" id="work">
+      <div class="p-work__wrapper">
+        <div class="c-sectionTitle">
+          <h2 class="c-sectionTitle__text">WORK</h2>
+        </div>
+        <div class="p-filter">
+          <input type="radio" name="categories" id="all" value="ALL" checked>
+          <label for="All">ALL</label>
+          <input type="radio" name="categories" id="javascript" value="JAVASCRIPT">
+          <label for="javascript">JAVASCRIPT</label>
+          <input type="radio" name="categories" id="react" value="REACT">
+          <label for="react">REACT</label>
+          <input type="radio" name="categories" id="laarvel" value="LARAVEL">
+          <label for="laravel">LARAVEL</label>
+        </div>
+        <ol class="p-targets">
+
+        </ol>
+      </div>
+    </section>
+  </main>
   <footer></footer>
-  <script src="canvas.js" type="text/javascript"></script>
+  <script src="assets/javascripts/canvas.js" type="text/javascript"></script>
 </body>
 </html>

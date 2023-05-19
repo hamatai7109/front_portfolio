@@ -1,4 +1,14 @@
 /* 共通スタイルは外に書く */
+.p-header{
+  background-color: #729edf;
+  width: 100%;
+}
+
+.p-header__wrapper{
+  padding: 30px;
+  border-bottom: 2px solid #000000;
+}
+
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
 

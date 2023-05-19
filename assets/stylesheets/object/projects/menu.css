@@ -1,5 +1,13 @@
 /* 共通スタイルは外に書く */
+.p-menuBox{
+  display: flex;
+  gap: 40px;
+}
 
+.p-menuBox__list--link{
+  font-size: 1.3rem;
+  color: #ffffff;
+}
 @media screen and (min-width: 796px) { /* pc用スタイル */
 
 

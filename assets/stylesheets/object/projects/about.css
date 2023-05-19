@@ -1,5 +1,10 @@
 /* 共通スタイルは外に書く */
 
+.p-about{
+  padding: 100px;
+  background-color:#F5F5F5;
+}
+
 @media screen and (min-width: 796px) { /* pc用スタイル */
 
 
