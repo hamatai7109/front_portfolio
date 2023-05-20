@@ -1,0 +1,84 @@
+/* 共通スタイルは外に書く */
+.p-portfolio{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-portfolio__item{
+  width: calc(100%/3);
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+}
+
+.p-portfolio__titleBox,
+.p-portfolio__linkBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff;
+  transition: all 0.3s linear;
+}
+
+.p-portfolio__titleBox{
+  justify-content:flex-end;
+  top: 0;
+  transform: translateY(-100%);
+
+}
+
+.p-portfolio__linkBox{
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+  transform: translateY(100%);
+
+}
+
+.p-portfolio__titleBox--main{
+  font-size: 2.5rem;
+}
+
+.p-portfolio__titleBox--sub{
+  font-size: 1.6rem;
+  color: #729edf;
+}
+
+.p-portfolio__linkBox--link{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  color: #000000;
+  border: 2px solid #729edf;
+  transition: all 0.2s linear;
+}
+
+.p-portfolio__linkBox--link:hover{
+  background-color: #729edf;
+  color: #ffffff;
+  border: none;
+}
+
+.p-portfolio__item:hover
+.p-portfolio__titleBox,
+.p-portfolio__item:hover
+.p-portfolio__linkBox{
+  transform: translateY(0);
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}

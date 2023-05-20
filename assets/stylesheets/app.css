@@ -25,16 +25,29 @@
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
-
+/* general */
 @import 'object/projects/index.css';
+
+/* hero */
 @import 'object/projects/hero.css';
 @import 'object/projects/header.css';
 @import 'object/projects/menu.css';
+
+/* about */
 @import 'object/projects/about.css';
 @import 'object/projects/feature.css';
 @import 'object/projects/intro.css';
 @import 'object/projects/skill.css';
 @import 'object/projects/strength.css';
+
+/* work */
+@import 'object/projects/work.css';
+@import 'object/projects/filter.css';
+@import 'object/projects/portfolio.css';
+
+/* blog */
+@import 'object/projects/blog.css';
+@import 'object/projects/article.css';
 
 /*// -----------------------------------------------------------------
 // Utility

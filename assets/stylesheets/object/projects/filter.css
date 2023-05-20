@@ -1,0 +1,33 @@
+/* 共通スタイルは外に書く */
+.p-filter{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.p-filter__button{
+  border: none;
+  cursor: pointer;
+  padding: 10px 50px;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  transition: all 0.2s linear;
+}
+
+.p-filter__button:hover{
+  color: #ffffff;
+  background-color: #729edf;
+}
+
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}
