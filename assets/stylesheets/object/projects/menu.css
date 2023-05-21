@@ -5,7 +5,7 @@
 }
 
 .p-menuBox__list--link{
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   color: #ffffff;
 }
 @media screen and (min-width: 796px) { /* pc用スタイル */

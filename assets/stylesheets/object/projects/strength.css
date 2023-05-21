@@ -15,18 +15,18 @@
 }
 
 .p-strength__content--icon i {
-  font-size: 9.0rem;
+  font-size: 5.0rem;
   color: #729EDF;
 }
 
 .p-strength__content--title{
   margin-top: 40px;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
 }
 
 .p-strength__content--text{
   margin-top: 20px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */

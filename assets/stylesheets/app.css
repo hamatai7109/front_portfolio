@@ -49,6 +49,13 @@
 @import 'object/projects/blog.css';
 @import 'object/projects/article.css';
 
+/* contact */
+@import 'object/projects/contact.css';
+@import 'object/projects/form.css';
+
+/* footer */
+@import 'object/projects/footer.css';
+
 /*// -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------*/

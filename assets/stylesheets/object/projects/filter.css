@@ -10,9 +10,9 @@
 .p-filter__button{
   border: none;
   cursor: pointer;
-  padding: 10px 50px;
+  padding: 8px 40px;
   background-color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: all 0.2s linear;
 }
 

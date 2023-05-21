@@ -39,7 +39,7 @@
 }
 
 .p-article__info--text{
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */

@@ -1,7 +1,8 @@
 /* 共通スタイルは外に書く */
 .p-blog{
-  padding: 100px;
+  padding: 100px 100px 300px 100px;
   background-color:#F5F5F5;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */

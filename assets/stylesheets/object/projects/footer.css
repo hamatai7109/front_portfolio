@@ -1,0 +1,106 @@
+/* 共通スタイルは外に書く */
+.p-footer{
+  text-align: center;
+  background-color: #F5F5F5;
+  padding: 30px;
+  position: relative;
+}
+
+.p-footer_backToTop{
+  background-color: #729edf;
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.p-footer__arrow{
+  display: inline-block;
+  margin-top: 20px;
+  width: 18px;
+  height: 18px;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+  transform: rotate(45deg);
+  position: relative;
+}
+
+.p-footer__arrow::after{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-top: 4px solid #ffffff;
+  border-left: 4px solid #ffffff;
+}
+
+@keyframes slideIn__around{
+  0% {transform:rotate(315deg) translateY(200%);}
+  100% {transform:rotate(45deg) translateY(0%); }
+}
+
+.p-footer_backToTop:hover
+.p-footer__arrow{
+  animation-name: slideIn__around;
+  animation-duration: 0.5s;
+}
+
+.p-footer__snsBox{
+  margin-top: 30px;
+}
+
+.p-footer__snsList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.p-footer__snsListItem{
+  background-color: #729edf;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.p-footer__snsListItem i{
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+@keyframes slideIn__topToBottom{
+  0% {transform: translateY(-200%);}
+  100% {transform: translateY(0%); }
+}
+
+.p-footer__snsListItem:hover i{
+  animation-name: slideIn__topToBottom;
+  animation-duration: 0.5s;
+}
+
+.p-footer__copy{
+  margin-top: 20px;
+}
+
+.p-footer__copy--text{
+  font-size: 0.8rem;
+}
+
+.p-footer__copy--text span{
+  color: #729edf;
+}
+
+@media screen and (min-width: 796px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+
+
+}

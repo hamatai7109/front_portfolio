@@ -1,4 +1,7 @@
 /* 共通スタイルは外に書く */
+.p-contact{
+  padding: 100px;
+}
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
 

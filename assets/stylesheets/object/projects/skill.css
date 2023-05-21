@@ -20,8 +20,8 @@
 .p-skill__title{
   color: #ffffff;
   text-align: center;
-  font-size: 1.0rem;
-  padding: 10px;
+  font-size: 0.8rem;
+  padding: 8px;
   width: 20%;
   background-color: #729EDF;
 }
@@ -51,7 +51,7 @@
 }
 
 .p-skill__percentage{
-  font-size: 1.0rem;
+  font-size: 0.8rem;
   margin-right: 20px;
 }
 
