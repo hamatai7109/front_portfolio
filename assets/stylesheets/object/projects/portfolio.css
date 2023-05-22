@@ -1,12 +1,9 @@
 /* 共通スタイルは外に書く */
 .p-portfolio{
   margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .p-portfolio__item{
-  width: calc(100%/3);
   border: 1px solid black;
   overflow: hidden;
   position: relative;
@@ -80,11 +77,22 @@
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-
+  .p-portfolio__item{
+    width: calc(100%/3);
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-portfolio__item{
+    width: 100%;
+  }
 
-
+  .p-portfolio__item:not(:first-of-type){
+    margin-top: 30px;
+  }
 }

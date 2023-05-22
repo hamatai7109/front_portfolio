@@ -1,10 +1,5 @@
 /* 共通スタイルは外に書く */
-.p-skill{
-  width: 50%;
-}
-
 .p-skill__bar{
-  width: 80%;
   background-color: #EEEEEE;
   overflow: hidden;
   display: flex;
@@ -56,11 +51,21 @@
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-skill{
+    width: 50%;
+  }
 
-
+  .p-skill__bar{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-skill,.p-skill__bar{
+    width: 100%;
+  }
 
-
+  .p-skill__bar{
+    margin-top: 30px;
+  }
 }

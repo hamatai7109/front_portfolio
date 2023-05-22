@@ -4,15 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
 }
 
 .p-filter__button{
   border: none;
   cursor: pointer;
-  padding: 8px 40px;
   background-color: #ffffff;
-  font-size: 1.2rem;
   transition: all 0.2s linear;
 }
 
@@ -23,11 +20,23 @@
 
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-filter{
+    gap: 40px;
+  }
 
-
+  .p-filter__button{
+    padding: 8px 40px;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-filter{
+    gap: 20px;
+  }
 
-
+  .p-filter__button{
+    padding: 3px 14px;
+    font-size: 1.1rem;
+  }
 }

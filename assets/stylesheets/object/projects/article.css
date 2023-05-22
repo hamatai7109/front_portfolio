@@ -1,14 +1,5 @@
 /* 共通スタイルは外に書く */
-.p-article{
-  margin-top: 100px;
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
 .p-article__item--title{
-  margin-top: 30px;
   font-size: 1.4rem;
   transition: all 0.3s linear;
 }
@@ -43,11 +34,30 @@
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-article{
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
 
-
+  .p-article__item--title{
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-article{
+    margin-top: 50px;
+  }
 
+  .p-article__item:not(:first-of-type){
+    margin-top: 50px;
+  }
+
+  .p-article__item--title{
+    margin-top: 20px;
+  }
 
 }

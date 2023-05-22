@@ -1,6 +1,5 @@
 /* 共通スタイルは外に書く */
 .p-intro{
-  width: 50%;
   text-align: center;
 }
 
@@ -21,11 +20,14 @@
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
-
+  .p-intro{
+    width: 50%;
+  }
 
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
-
-
+  .p-intro{
+    width: 100%;
+  }
 }

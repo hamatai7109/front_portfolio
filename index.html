@@ -13,19 +13,10 @@
   <script src="https://kit.fontawesome.com/13d82e61e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <section class="p-hero" id="hero">
-    <canvas></canvas>
-    <div class="p-hero__bg"></div>
-    <div class="p-hero__titleBox">
-      <h1 class="p-hero__titleBox--text">Hello,World<br> I am <span class="myName">Taishi Hamano<span></h1>
-      <div class="p-hero__linkBox">
-        <a class="p-hero__linkBox--link" href="#work">View My Work<span class="arrow"></span></a>
-      </div>
-    </div>
-  </section>
-  <header class="p-header">
+  <header class="p-header" id="header">
+    <div class="p-header__overlay" id="jsi-overlay"></div>
     <div class="p-header__wrapper">
-      <div class="p-menu">
+      <nav class="p-menu" id="jsi-menubar">
         <ul class="p-menuBox">
           <li class="p-menuBox__list"><a href="#hero" class="p-menuBox__list--link" id="menu__home">HOME</a></li>
           <li class="p-menuBox__list"><a href="#about" class="p-menuBox__list--link" id="menu__about">ABOUT</a></li>
@@ -33,10 +24,28 @@
           <li class="p-menuBox__list"><a href="#blog" class="p-menuBox__list--link" id="menu__blog">BLOG</a></li>
           <li class="p-menuBox__list"><a href="#contact" class="p-menuBox__list--link" id="menu__contact">CONTACT</a></li>
         </ul>
-      </div>
+      </nav>
+    </div>
+    <!-- ハンバーガーメニュー -->
+    <div class="p-header__hamburgerBox">
+      <button class="p-header__hamburger u-hidden-pc" id="jsi-hamburger">
+        <span class="p-header__hamburgerBar"></span>
+        <span class="p-header__hamburgerBar"></span>
+        <span class="p-header__hamburgerBar"></span>
+      </button>
     </div>
   </header>
   <main>
+    <section class="p-hero" id="hero">
+      <canvas></canvas>
+      <div class="p-hero__bg"></div>
+      <div class="p-hero__titleBox">
+        <h1 class="p-hero__titleBox--text">Hello,World<br> I am <span class="myName">Taishi Hamano<span></h1>
+        <div class="p-hero__linkBox">
+          <a class="p-hero__linkBox--link" href="#work">View My Work<span class="arrow"></span></a>
+        </div>
+      </div>
+    </section>
     <section class="p-about" id="about">
       <div class="p-about__wrapper">
         <div class="c-sectionTitle">
@@ -270,7 +279,8 @@
     </div>
     <div class="p-footer__copy"><p class="p-footer__copy--text">TAISHI HAMANO<span>&copy;2023<span></p></div>
   </footer>
-  <script src="assets/javascripts/script.js" type="text/javascript"></script>
   <script src="assets/javascripts/canvas.js" type="text/javascript"></script>
+  <script src="assets/javascripts/common.js" type="text/javascript"></script>
+  <script src="assets/javascripts/main.js" type="text/javascript"></script>
 </body>
 </html>

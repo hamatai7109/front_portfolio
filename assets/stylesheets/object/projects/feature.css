@@ -1,18 +1,16 @@
 /* 共通スタイルは外に書く */
-
 .p-feature{
   margin-top: 100px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
 }
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
-
-
+  .p-feature{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
-
 
 }

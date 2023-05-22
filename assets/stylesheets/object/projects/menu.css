@@ -1,19 +1,51 @@
 /* 共通スタイルは外に書く */
-.p-menuBox{
-  display: flex;
-  gap: 40px;
-}
-
 .p-menuBox__list--link{
   font-size: 1.0rem;
   color: #ffffff;
 }
 @media screen and (min-width: 796px) { /* pc用スタイル */
-
-
+  .p-menuBox{
+    display: flex;
+    gap: 40px;
+  }
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
+ /* ナビゲーションを画面外右側に配置して見えなくする */
+  .p-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: 70%;
+    margin-left: auto;
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #ffffff;
+    z-index: 999;
+    transition:transform ease .4s ;
+  }
 
-
+  /* is-openクラスが付与されると画面内に推移する */
+  .p-menu.is-open {
+    transform: translateX(0);
+    position: fixed;
+  }
+  .p-menuBox {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p-menuBox__list:not(:first-child){
+    margin-top: 24px;
+  }
+  .p-menuBox__list--link {
+    color: black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
 }
