@@ -7,6 +7,8 @@
   border: 1px solid black;
   overflow: hidden;
   position: relative;
+  opacity: 0;
+  transition: all 1s linear;
 }
 
 .p-portfolio__item--img{

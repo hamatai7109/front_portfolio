@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 10;
 }
 
 .p-skill__bar:not(:first-of-type){
@@ -19,6 +20,7 @@
   padding: 8px;
   width: 20%;
   background-color: #729EDF;
+  z-index: 11;
 }
 
 .p-skill__fill{
@@ -27,6 +29,7 @@
   position: absolute;
   top: 0;
   left:20%;
+  opacity: 0;
 }
 
 .html,.css{

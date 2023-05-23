@@ -1,5 +1,7 @@
 .u-hidden { display: none; }
 
+.is-visible{display: block;}
+
 .is-red{color: #ff0000;}
 
 .is-show{top: 0;}

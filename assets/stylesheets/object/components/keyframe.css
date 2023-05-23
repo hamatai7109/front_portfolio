@@ -25,6 +25,90 @@
   animation-fill-mode: forwards;
 }
 
+/* Strength-icon */
+@keyframes flipIn{
+  0%{transform:rotateY(-180deg); opacity: 0;}
+  100%{transform:rotateY(0deg); opacity: 1;}
+}
+
+.flipIn{
+  animation-name: flipIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Strength-text */
+@keyframes fadeIn{
+  0%{transform: translateY(50%); opacity: 0;}
+  100%{transform: translateY(0%); opacity: 1;}
+}
+
+.fadeIn{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* skill */
+@keyframes slideIn__right{
+  0%{transform: translateX(100%); opacity: 0;}
+  100%{transform: translateX(0%); opacity: 1;}
+}
+
+.slideIn__right{
+  animation-name: slideIn__right;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* skillBar */
+@keyframes skillBar{
+  0%{transform: translateX(-100%); opacity: 0;}
+  100%{transform: translateX(0%); opacity: 1;}
+}
+
+.skillBar{
+  animation-name: skillBar;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* portfolio */
+@keyframes scaleUp{
+  0%{transform:scale(0,0); opacity: 0;}
+  100%{transform: scale(1,1); opacity: 1;}
+}
+
+.scaleUp{
+  animation-name: scaleUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleDown{
+  0%{transform:scale(1,1); opacity: 1;}
+  100%{transform: scale(0,0); opacity: 0;}
+}
+
+.scaleDown{
+  animation-name: scaleDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* contact */
+@keyframes bounce{
+  0%, 40%, 60%, 80% {transform: scale(1.0);}
+  50%, 70% {transform: scale(0.95);}
+}
+
+.bounce{
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+}
+
 @media screen and (min-width: 796px) { /* pc用スタイル */
 
 

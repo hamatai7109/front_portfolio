@@ -26,30 +26,6 @@ const about = document.getElementById('about'),
     }
   }
 
-  // セクションタイトル用
-  function slideIn__normal(){
-    const target = document.getElementsByClassName('jsi-slideIn__normal');
-
-    for(let i = 0; i <target.length; i++){
-      let offsetTop = Math.floor(target[i].getBoundingClientRect().top);      
-      if(offsetTop < innerHeight){
-        target[i].classList.add('slideIn__normal');
-      }
-    }
-  }
-
-  // セクションタイトルの下線を遅れて表示
-  function slideIn__delay(){
-    const target = document.getElementsByClassName('jsi-slideIn__delay');
-
-    for(let i = 0; i <target.length; i++){
-      let offsetTop = Math.floor(target[i].getBoundingClientRect().top);      
-      if(offsetTop < innerHeight){
-        target[i].classList.add('slideIn__delay');
-      }
-    }
-  }
-
 //スクロール時の挙動
 window.addEventListener('scroll', function(){
   const aboutMenu = 'menu__about',
@@ -74,4 +50,9 @@ window.addEventListener('scroll', function(){
   judgeSection(contactPosStart,contactPosEnd,contactMenu);
   slideIn__normal();
   slideIn__delay();
+  flipIn();
+  fadeIn();
+  slideIn__right();
+  skillBar();
+  bounce();
 })
