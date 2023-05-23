@@ -1,15 +1,29 @@
 /* 共通スタイルは外に書く */
-@keyframes slideIn__left{
-  0%{transform: translateX(-100%); opacity: 0;}
+
+/* セクションタイトル */
+@keyframes slideIn__normal{
+  0%{transform: translateX(-10%); opacity: 0;}
   100%{transform: translateX(0%); opacity: 1;}
 }
 
-.slideIn__left{
-  animation-name: slideIn__left;
+.slideIn__normal{
+  animation-name: slideIn__normal;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
+/* セクションタイトルの下線部 */
+@keyframes slideIn__delay{
+  0%{transform: translateX(-100%); opacity: 0;}
+  100%{transform: translateX(-50%); opacity: 1;}
+}
+
+.slideIn__delay{
+  animation-name: slideIn__delay;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
 
 @media screen and (min-width: 796px) { /* pc用スタイル */
 

@@ -10,25 +10,26 @@
   position: relative;
 }
 
-.c-sectionTitle__text::after{
+.c-sectionTitle__text--bar{
   content: "";
   height: 2px;
   background-color: #000000;
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  opacity: 0;
 }
 
+
 @media screen and (min-width: 796px) { /* pc用スタイル */
-  .c-sectionTitle__text::after{
+  .c-sectionTitle__text--bar{
     width: 10%;
   }
 
 }
 
 @media screen and (max-width: 795px) { /* sp用スタイル */
-  .c-sectionTitle__text::after{
+  .c-sectionTitle__text--bar{
     width: 20%;
   }
 

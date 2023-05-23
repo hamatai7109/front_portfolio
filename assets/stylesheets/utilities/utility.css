@@ -2,9 +2,7 @@
 
 .is-red{color: #ff0000;}
 
-.is-show{
-  top: 0;
-}
+.is-show{top: 0;}
 
 @media screen and (min-width: 796px) { /* pc */
   .u-hidden-pc {
