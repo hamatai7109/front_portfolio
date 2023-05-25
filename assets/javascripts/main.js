@@ -56,3 +56,8 @@ window.addEventListener('scroll', function(){
   skillBar();
   bounce();
 })
+
+//ローディング画面の表示
+window.addEventListener( 'load', function(){
+  document.getElementById('loading').classList.add( 'hide' );
+});
