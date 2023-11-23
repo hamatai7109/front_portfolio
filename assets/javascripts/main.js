@@ -19,7 +19,7 @@ const about = document.getElementById('about'),
   function fixHeader(){ 
     let scrollPoint = 0;
     scrollPoint = window.scrollY;
-    if(scrollPoint > window.innerHeight){                 // ヒーローセクションを下回るとヘッダーを出す。
+    if(scrollPoint > window.innerHeight / 2){                 // ヒーローセクションを下回るとヘッダーを出す。
       header.classList.add('is-show');
     }else{                                                //ヒーローセクションに戻るとヘッダーを隠す
       header.classList.remove('is-show');

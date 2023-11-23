@@ -1,64 +1,64 @@
 // filter
-const javascript = document.getElementsByClassName('javascript');
-const react = document.getElementsByClassName('react');
-const laravel = document.getElementsByClassName('laravel');
+const homepage = document.getElementsByClassName('homepage');
+const lp = document.getElementsByClassName('lp');
+const game = document.getElementsByClassName('game');
 
 //リセット
 function reset(){
-  for(let i = 0; i < javascript.length; i++){
-    javascript[i].classList.add('u-hidden')
-    javascript[i].classList.remove('scaleUp')
+  for(let i = 0; i < homepage.length; i++){
+    homepage[i].classList.add('u-hidden')
+    homepage[i].classList.remove('scaleUp')
   }
-  for(let i = 0; i < react.length; i++){
-    react[i].classList.add('u-hidden')
-    react[i].classList.remove('scaleUp')
+  for(let i = 0; i < lp.length; i++){
+    lp[i].classList.add('u-hidden')
+    lp[i].classList.remove('scaleUp')
   }
-  for(let i = 0; i < laravel.length; i++){
-    laravel[i].classList.add('u-hidden')
-    laravel[i].classList.remove('scaleUp')
+  for(let i = 0; i < game.length; i++){
+    game[i].classList.add('u-hidden')
+    game[i].classList.remove('scaleUp')
   }
 }
 
 //all
 function show__all(){
   reset();
-  for(let i = 0; i < javascript.length; i++){
-    javascript[i].classList.add('scaleUp')
-    javascript[i].classList.remove('u-hidden')
+  for(let i = 0; i < homepage.length; i++){
+    homepage[i].classList.add('scaleUp')
+    homepage[i].classList.remove('u-hidden')
   }
-  for(let i = 0; i < react.length; i++){
-    react[i].classList.add('scaleUp')
-    react[i].classList.remove('u-hidden')
+  for(let i = 0; i < lp.length; i++){
+    lp[i].classList.add('scaleUp')
+    lp[i].classList.remove('u-hidden')
   }
-  for(let i = 0; i < laravel.length; i++){
-    laravel[i].classList.add('scaleUp')
-    laravel[i].classList.remove('u-hidden')
-  }
-}
-
-//javascript
-function show__javascript(){
-  reset();
-  for(let i = 0; i < javascript.length; i++){
-    javascript[i].classList.add('scaleUp')
-    javascript[i].classList.remove('u-hidden')
+  for(let i = 0; i < game.length; i++){
+    game[i].classList.add('scaleUp')
+    game[i].classList.remove('u-hidden')
   }
 }
 
-//react
-function show__react(){
+//homepage
+function show__homepage(){
   reset();
-  for(let i = 0; i < react.length; i++){
-    react[i].classList.add('scaleUp')
-    react[i].classList.remove('u-hidden')
+  for(let i = 0; i < homepage.length; i++){
+    homepage[i].classList.add('scaleUp')
+    homepage[i].classList.remove('u-hidden')
   }
 }
 
-//laravel
-function show__laravel(){
+//lp
+function show__lp(){
   reset();
-  for(let i = 0; i < laravel.length; i++){
-    laravel[i].classList.add('scaleUp')
-    laravel[i].classList.remove('u-hidden')
+  for(let i = 0; i < lp.length; i++){
+    lp[i].classList.add('scaleUp')
+    lp[i].classList.remove('u-hidden')
+  }
+}
+
+//game
+function show__game(){
+  reset();
+  for(let i = 0; i < game.length; i++){
+    game[i].classList.add('scaleUp')
+    game[i].classList.remove('u-hidden')
   }
 }
